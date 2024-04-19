@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-blend-mode: overlay;
+    background-image: url("img3.jpg");
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+  }
+  
+  h1 {
+    margin: 10px 0;
+  }
+  
+  nav {
+    background-color: #555;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dashboard-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #inbox {
+    background-color: #fff;
+  }
+  
+  #chatBox {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #location {
+    background-color: #eee;
+  }
+  
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+  
+  #services {
+    background-color: #fff;
+  }
+  .back{
+    background-image: url('img3.jpg');
+    background-size: 100%;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

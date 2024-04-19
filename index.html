@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADVANCED INTELLIGENCE MILITARY</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo1 {
+      width: 70px;
+      height: 70px;
+      border-radius: 40px;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      padding: 25px;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Login form styles */
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .section1 {
+      background-image : url('img1.jpg');
+      background-size: 34%;
+      background-position: 0cqmax;
+    }
+    .background{
+    size: 20px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .section {
+      display: flexbox;
+      height: 200px;
+    }
+
+    .section3 {
+      display: flexbox;
+      height: 600px;
+      background-color: #444444cb;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 15px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for form labels */
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* Style for input fields */
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Style for the submit button */
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Hover effect for the submit button */
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Error message style */
+    .form-error {
+      color: wheat;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      form {
+        max-width: 100%;
+      }
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ADVANCED INTELLIGENCE MILITARY</h1>
+  </header>
+  <nav>
+    <div class="logo"><img src="logo.jpg" alt="Army Logo" class="logo1"></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="section1 background">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <select id="role" name="role" required>
+          <option value="commander">Commander</option>
+          <option value="soldier">Soldier</option>
+        </select>
+        <button type="submit" onclick="login()">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="section">
+    <h2>About Us</h2>
+    <p>Learn more about our brave soldiers and their dedication to serving the nation and protecting our community.</p>
+  </div>
+  <div class="section">
+    <h2>Our Services</h2>
+    <p>We provide a range of services including training, defense, and humanitarian aid.</p>
+  </div>
+  <div class="section3">
+    <h2>Contact Us</h2>
+    <form id="contact-form" method="POST" action="sendmail.php">
+      <div class="form-row form-error" style="display:none;"></div>
+      <div class="form-row">
+        <label for="contact-form-name">Name:</label>
+        <input id="contact-form-name" class="form-input" type="text" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="contact-form-email">Email:</label>
+        <input id="contact-form-email" class="form-input" type="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="contact-form-phone">Phone:</label>
+        <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+      </div>
+      <div class="form-row">
+        <label for="contact-form-area-code">Area Code:</label>
+        <input id="contact-form-area-code" class="form-input" type="text" name="area_code">
+      </div>
+      <div class="form-row">
+        <label for="contact-form-house-no">House Number:</label>
+        <input id="contact-form-house-no" class="form-input" type="text" name="house_no">
+      </div>
+      <div class="form-row">
+        <label for="contact-form-problem">Problem Statement:</label>
+        <textarea id="contact-form-problem" class="form-input" name="problem" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <footer>
+    © 2024 Army Website. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

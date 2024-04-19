@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soldier Dashboard</title>
+  <link rel="stylesheet" href="sold.css">
+</head>
+<body>
+  <header>
+    <img src="logo3.jpg" alt="Army Logo" class="logo">
+    <h1>Soldier Dashboard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inbox">Inbox</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="first.html" onclick="logout()">Logout</a></li>
+      
+    </ul>
+  </nav>
+<div class="back">
+  <section id="inbox" class="dashboard-section">
+    <h2>Inbox</h2>
+    <div id="chatBox">
+      <!-- Placeholder for chat messages -->
+    </div>
+    <textarea id="messageInput" placeholder="Type your message"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+  </section>
+
+  <section id="location" class="dashboard-section">
+    <h2>Location</h2>
+    <div id="map"></div>
+  </section>
+
+  <section id="services" class="dashboard-section">
+    <h2>Services</h2>
+    <!-- Include information about services provided by the soldier -->
+  </section>
+</div>
+  <footer>
+    <p>&copy; 2024 Army Activities</p>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" defer></script>
+  <script src="sold.js"></script>
+</body>
+</html>

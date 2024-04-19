@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Army Website</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <img src="logo3.jpg" alt="Army Logo" class="logo">
+      <h1></h1>
+    </div>
+    <div class="login-section">
+      <h2>SIGN IN</h2>
+      <form class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter username" name="password" required>
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+          <option value="commander">Commander</option>
+          <option value="soldier">Soldier</option>
+        </select>
+        <button type="submit" onclick="validateAndSubmit()">Login</button>
+      </form>
+    </div>
+  </div>
+  <script src="first.js"></script>
+</body>
+</html>

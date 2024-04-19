@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander Dashboard</title>
+  <link rel="stylesheet" href="cmd.css">
+</head>
+<body>
+  <header>
+    <img src="logo3.jpg" alt="Army Logo" class="logo">
+    <h1>Commander Dashboard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#missions">Missions</a></li>
+      <li><a href="#strategy">Strategy</a></li>
+      <li><a href="#messages">Messages</a></li>
+      <li><a href="first.html" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+<div class="back">
+  <section id="overview" class="dashboard-section">
+    <h2>Commander Overview</h2>
+    <!-- Include specific content for the commander's overview -->
+    <p>As a commander, you play a pivotal role in leading your troops to success on the battlefield. Your leadership, strategic acumen, and decision-making skills are critical components in achieving mission objectives.</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul class="container">
+     
+        <li>Developing and implementing effective strategies for mission success.</li>
+        <li>Leading and inspiring your troops to achieve peak performance.</li>
+        <li>Coordinating with intelligence units to gather critical information.</li>
+        <li>Ensuring efficient use of resources and logistics.</li>
+        <li>Adapting to dynamic battlefield conditions and making quick decisions.</li>
+        <!-- Add more responsibilities as needed -->
+
+      </ul>
+      <p>Remember, your leadership is the backbone of the unit. By fostering a culture of teamwork, discipline, and resilience, you contribute significantly to the success of each mission.</p>
+    
+  </section>
+
+  <section id="missions" class="dashboard-section">
+    <h2>Missions</h2>
+    <!-- Include specific content for the commander's missions -->
+    <ul class="container">
+        <li >
+          <strong>Mission Alpha</strong>
+          <p><strong>Objective:</strong> Secure the designated area and gather critical intel.</p>
+          <p><strong>Status:</strong> In Progress</p>
+        </li>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <li>
+          <strong>Mission Bravo</strong>
+          <p><strong>Objective:</strong> Eliminate enemy forces in Sector 7.</p>
+          <p><strong>Status:</strong> Completed</p>
+          
+        </li>
+        <!-- Add more ongoing missions as needed -->
+        
+      </ul>
+      <h2>Upcoming Missions</h2>
+      <ul class="container">
+        <li>
+          <strong>Mission Charlie</strong>
+          <p><strong>Objective:</strong> Conduct a reconnaissance mission in the enemy territory.</p>
+          <p><strong>Status:</strong> Pending</p>
+        </li>
+        <li>
+          <strong>Mission Delta</strong>
+          <p><strong>Objective:</strong> Secure supply routes in preparation for a major offensive.</p>
+          <p><strong>Status:</strong> Pending</p>
+        </li>
+        <!-- Add more upcoming missions as needed -->
+      </ul>
+  </section>
+
+  <section id="strategy" class="dashboard-section">
+    <h2>Strategy Area</h2>
+    <p>As a commander, your role is crucial in leading your troops to victory. Here are key strategies to consider:</p>
+      <ul class="strategy" class="container">
+        <li><strong>Coordination:</strong> Ensure seamless coordination among your units for effective communication and teamwork.</li>
+        <li><strong>Tactical Planning:</strong> Strategize each mission with a focus on achieving objectives and minimizing risks.</li>
+        <li><strong>Adaptability:</strong> Stay agile and adapt your strategies based on changing battlefield conditions and enemy movements.</li>
+        <li><strong>Resource Management:</strong> Efficiently manage resources such as ammunition, supplies, and reinforcements.</li>
+        <li><strong>Intel Analysis:</strong> Analyze intelligence reports to gain insights into enemy strengths and weaknesses.</li>
+        <!-- Add more key strategies as needed -->
+      </ul>
+    <div id="strategyArea">
+      <textarea id="strategyInput" placeholder="Enter strategy for soldiers"></textarea>
+      <button onclick="sendStrategy()">Send Strategy</button>
+    </div>
+  </section>
+
+  <section id="messages" class="dashboard-section">
+    <h2>Messages</h2>
+    <div id="messageBox"></div>
+    
+  </section>
+</div>
+  <footer>
+    <p>&copy; 2024 Army Activities</p>
+  </footer>
+
+  <script src="cmd.js"></script>
+</body>
+</html>
